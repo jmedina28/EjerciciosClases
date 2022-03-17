@@ -1,5 +1,7 @@
 from clases.Palindromo import *
 from clases import Palindromos_Instancias
+from clases.Logger import *
+import time
 
 
 def seleccionejercicio(variable):
@@ -14,7 +16,10 @@ def seleccionejercicio(variable):
     elif variable == 3:
         print("En desarrollo...")
     elif variable == 4:
-        print("En desarrollo...")
+        l = Logger
+        print(l.seguimientollamadas(input(
+            "Introduzca la cantidad de llamadas que usted desea incluir en el registro: ")))
+
     else:
         print("Introduzca valores correctos por favor.")
         seleccionejercicio(int(input("""
