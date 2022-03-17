@@ -1,5 +1,10 @@
 # Palíndromos
-class Palindromo():
+class Palindromo:
+    contenido = str(input("Introduzca una frase/palabra/número: "))
+
+    def __init__(self):
+        self.contenido = contenido
+
     def palindromo(contenido):
         a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
         tilde = str.maketrans(a, b)
@@ -12,5 +17,5 @@ class Palindromo():
             print("Esta frase/palabra/número es un palíndromo.")
         else:
             print("No es palíndromo.")
-    contenido = str(input("Introduzca una frase/palabra/número: "))
+
     palindromo(contenido)
