@@ -11,10 +11,11 @@ class Palindromo:
         listaresultado = list(reversed(contenido))  # Invierto la lista.
         if lista == listaresultado:  # Comparo el contenido original con el inverso.
             print(True)
+            exit()
         else:
             print(False)
+            exit()
         
-
     def test():
         a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
         tilde = str.maketrans(a, b)
