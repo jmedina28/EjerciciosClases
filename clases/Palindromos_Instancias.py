@@ -20,10 +20,8 @@ class Palindromos():
             self.lista = list(contenido)  # Convierto el atributo en una lista.
             self.listaresultado = list(reversed(contenido))  # Invierto la lista.
             if self.lista == self.listaresultado:  # Comparo el atributo original con el inverso.
-                print(True)
                 return True
             else:
-                print(False)
                 return False
 
     def destructor(self):
@@ -40,7 +38,10 @@ class Palindromos():
             print(str(ultima_linea))
         self.doct.close()
         Palindromos(self.atributo)
-        Palindromos(self.atributo).test(self.atributo)
+        if Palindromos(self.atributo).test(self.atributo) == True:
+            print(True)
+        else:
+            print(False)
         Palindromos(self.atributo).destructor()
 
 
