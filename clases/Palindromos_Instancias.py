@@ -42,6 +42,3 @@ class Palindromos():
         else:
             print(False)
         Palindromos(self.atributo).destructor()
-
-
-Palindromos("caca").ejecutar()
