@@ -18,7 +18,7 @@ class Palindromos():
         self.lista = list(contenido)  # Convierto el atributo en una lista.
         # Invierto la lista.
         self.listaresultado = list(reversed(contenido))
-           # Comparo el atributo original con el inverso.
+        # Comparo el atributo original con el inverso.
         if self.lista == self.listaresultado:
             return True
         else:
