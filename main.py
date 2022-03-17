@@ -31,5 +31,5 @@ variable = int(input("""
 
 Seleccione que ejercicio desea ejecutar(1-4): """))
 
-if __name__=="__main__":
+if __name__ == "__main__":
     seleccionejercicio(variable)
