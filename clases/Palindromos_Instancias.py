@@ -1,24 +1,28 @@
 # Palíndromos
+
 from operator import truediv
 import os
 import re
+
 
 class Palindromos():
     def __init__(self, atributo):
         self.atributo = atributo
 
     def test(self, contenido):
-            a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
-            self.tilde = str.maketrans(a, b)
-            contenido = contenido.lower()  # Convierto el texto en minúsculas.
-            contenido = contenido.replace(' ', '')  # Quito los espacios.
-            contenido = contenido.translate(self.tilde)  # Elimino las tildes.
-            self.lista = list(contenido)  # Convierto el atributo en una lista.
-            self.listaresultado = list(reversed(contenido))  # Invierto la lista.
-            if self.lista == self.listaresultado:  # Comparo el atributo original con el inverso.
-                return True
-            else:
-                return False
+        a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
+        self.tilde = str.maketrans(a, b)
+        contenido = contenido.lower()  # Convierto el texto en minúsculas.
+        contenido = contenido.replace(' ', '')  # Quito los espacios.
+        contenido = contenido.translate(self.tilde)  # Elimino las tildes.
+        self.lista = list(contenido)  # Convierto el atributo en una lista.
+        # Invierto la lista.
+        self.listaresultado = list(reversed(contenido))
+           # Comparo el atributo original con el inverso.
+        if self.lista == self.listaresultado:
+            return True
+        else:
+            return False
 
     def destructor(self):
         self.doct = open("Palindromos.txt", "r")
