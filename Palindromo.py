@@ -1,11 +1,7 @@
 # Palíndromos
+
 class Palindromo:
-    contenido = str(input("Introduzca una frase/palabra/número: "))
-
-    def __init__(self):
-        self.contenido = contenido
-
-    def palindromo(contenido):
+    def esPalindromo(contenido):
         a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
         tilde = str.maketrans(a, b)
         contenido = contenido.lower()  # Convierto el texto en minúsculas.
@@ -14,8 +10,8 @@ class Palindromo:
         lista = list(contenido)  # Convierto en el contenido en una lista.
         listaresultado = list(reversed(contenido))  # Invierto la lista.
         if lista == listaresultado:  # Comparo el contenido original con el inverso.
-            print("Esta frase/palabra/número es un palíndromo.")
+            print(True)
         else:
-            print("No es palíndromo.")
-
-    palindromo(contenido)
+            print(False)
+    contenido = str(input("Introduzca una frase/palabra/número: "))
+    esPalindromo(contenido)
