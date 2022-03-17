@@ -3,7 +3,7 @@
 <h3 align="center">Autores de este proyecto:</h3>
 
 1. [@jmedina28](https://github.com/jmedina28)
-1. [xavitheforce](https://github.com/Xavitheforce)
+1. [@xavitheforce](https://github.com/Xavitheforce)
 ---
 En este [repositorio](https://github.com/jmedina28/EjerciciosClases) quedan resueltos los ejercicios de clases para POO. Para llevar a cabo el proyecto nos hemos documentado a través de la teoría que se encuentra en el campus virtual y de diversas fuentes que hemos encontrado.
 ***
