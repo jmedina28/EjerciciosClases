@@ -1,4 +1,4 @@
-from Palindromo import *
+from clases.Palindromo import *
 def seleccionejercicio(variable):
 
     if variable == 1:
