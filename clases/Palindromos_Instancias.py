@@ -29,14 +29,12 @@ class Palindromos():
 
     def ejecutar(self):
         self.doct = open("Palindromos.txt", "r")
-        print(self.doct.readlines())
-        if len(self.doct.readlines()) > 1:
-            self.ultima_linea = self.doct.readlines()[-1]
-            if self.ultima_linea != "" and Palindromos(self.atributo).test(self.ultima_linea) == True:
-                print(str(self.ultima_linea))
+        self.ultima_linea = self.doct.readlines()[-1]
+        if self.ultima_linea != "#" and Palindromos(self.atributo).test(self.ultima_linea) == True:
+            print(str(self.ultima_linea))
         self.doct.close()
         self.m_atributo = Palindromos(self.atributo).atributo.upper()
-        self.doct = open("Palindromos.txt", "w")
+        self.doct = open("Palindromos.txt", "a")
         self.doct.write("\n"+str(self.m_atributo))
         self.doct.close()
         if Palindromos(self.atributo).test(self.atributo) == True:
@@ -46,4 +44,4 @@ class Palindromos():
         Palindromos(self.atributo).destructor()
 
 
-Palindromos("raton").ejecutar()
+Palindromos("caca").ejecutar()
