@@ -26,4 +26,5 @@ class Logger:
         if variable == 1:
             os.remove("Logger.txt")
         else:
+            print("En este caso, si desea volver a ejecutar el programa tendrá que eliminar manualmente el fichero de texto.")
             exit()
