@@ -6,10 +6,6 @@ import re
 class Palindromos():
     def __init__(self, atributo):
         self.atributo = atributo
-        self.m_atributo = self.atributo.upper()
-        self.doct = open("Palindromos.txt", "w")
-        self.doct.write(str(self.m_atributo)+os.linesep)
-        self.doct.close()
 
     def test(self, contenido):
             a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
@@ -33,11 +29,16 @@ class Palindromos():
 
     def ejecutar(self):
         self.doct = open("Palindromos.txt", "r")
-        ultima_linea = self.doct.readlines()[-1]
-        if Palindromos(self.atributo).test(self.atributo) == True:
-            print(str(ultima_linea))
+        print(self.doct.readlines())
+        if len(self.doct.readlines()) > 1:
+            self.ultima_linea = self.doct.readlines()[-1]
+            if self.ultima_linea != "" and Palindromos(self.atributo).test(self.ultima_linea) == True:
+                print(str(self.ultima_linea))
         self.doct.close()
-        Palindromos(self.atributo)
+        self.m_atributo = Palindromos(self.atributo).atributo.upper()
+        self.doct = open("Palindromos.txt", "w")
+        self.doct.write("\n"+str(self.m_atributo))
+        self.doct.close()
         if Palindromos(self.atributo).test(self.atributo) == True:
             print(True)
         else:
@@ -45,4 +46,4 @@ class Palindromos():
         Palindromos(self.atributo).destructor()
 
 
-Palindromos("ana").ejecutar()
+Palindromos("raton").ejecutar()
