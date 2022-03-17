@@ -9,8 +9,6 @@ class Logger:
         fichero = open("Logger.txt", "a")
         fichero.write("--Start log--")
 
-    
-    
         for i in range(1, int(n)+1): 
             if i == 1: 
                 fichero.write("\nPrimera llamada.")
