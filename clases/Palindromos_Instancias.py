@@ -1,19 +1,17 @@
 # Palíndromos
 from operator import truediv
 import os
+import re
 
 class Palindromos():
     def __init__(self, atributo):
         self.atributo = atributo
+        self.m_atributo = self.atributo.upper()
+        self.doct = open("Palindromos.txt", "w")
+        self.doct.write(str(self.m_atributo)+os.linesep)
+        self.doct.close()
 
     def test(self, contenido):
-            self.doct = open("Palindromos.txt", "w")
-            ultima_linea = self.doct.readlines()[-1]
-            if Palindromos().test(str(ultima_linea)) == True:
-                print(str(ultima_linea))
-            self.mayuscula = contenido.upper()
-            self.doct.write(str(self.mayuscula)+os.linesep)
-            self.doct.close()
             a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
             self.tilde = str.maketrans(a, b)
             contenido = contenido.lower()  # Convierto el texto en minúsculas.
@@ -31,11 +29,19 @@ class Palindromos():
     def destructor(self):
         self.doct = open("Palindromos.txt", "r")
         ultima_linea = self.doct.readlines()[-1]
-        if Palindromos().test(self.atributo) == False:
+        if Palindromos(self.atributo).test(self.atributo) == False:
             print(str(ultima_linea))
         self.doct.close()
 
-
     def ejecutar(self):
-        Palindromos().test(self.atributo)
-        Palindromos().destructor()
+        self.doct = open("Palindromos.txt", "r")
+        ultima_linea = self.doct.readlines()[-1]
+        if Palindromos(self.atributo).test(self.atributo) == True:
+            print(str(ultima_linea))
+        self.doct.close()
+        Palindromos(self.atributo)
+        Palindromos(self.atributo).test(self.atributo)
+        Palindromos(self.atributo).destructor()
+
+
+Palindromos("ana").ejecutar()
