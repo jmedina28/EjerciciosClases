@@ -1,4 +1,5 @@
 from clases.Palindromo import *
+
 def seleccionejercicio(variable):
 
     if variable == 1:
@@ -29,4 +30,5 @@ variable = int(input("""
 
 Seleccione que ejercicio desea ejecutar(1-4): """))
 
-seleccionejercicio(variable)
+if __name__=="__main__":
+    seleccionejercicio(variable)
