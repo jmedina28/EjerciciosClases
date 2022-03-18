@@ -1,6 +1,7 @@
 from clases.Palindromo import *
 from clases import Palindromos_Instancias
 from clases.Logger import *
+from clases.Puzzle import *
 
 
 def seleccionejercicio(variable):
@@ -13,7 +14,7 @@ def seleccionejercicio(variable):
             input("Introduzca una frase/palabra/número para comprobar si es palíndromo: "))
         Palindromos_Instancias.Palindromos(palabra).ejecutar()
     elif variable == 3:
-        print("En desarrollo...")
+        puzzle()
     elif variable == 4:
         l = Logger
         print(l.seguimientollamadas(input(
