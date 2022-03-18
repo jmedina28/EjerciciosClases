@@ -101,6 +101,8 @@ class Palindromos():
             print(False)
         Palindromos(self.atributo).destructor()
 ```
+Pregunta adicional: ¿por qué se muestra RADAR después de la instanciación Palindromo("sonar")?
+La respuesta es porque RADAR es un palindromo, mientras que SONAR no, así que probablemente cuando la instancia es un palindromo no la destruye, sino que espera a la siguiente instancia para ello, mientras que si no es un palindromo es probable que inmediatamente la destruya. Como al destruir, el codigo muestra el dato, eso explica por qué RADAR se muestra despues de instanciar SONAR.
 
 El UML es el siguiente:
 
