@@ -109,8 +109,6 @@ El UML es el siguiente:
 
 ## Ejercicio 3: Puzzle<a name="id3"></a>
 
-En este ejercicio...
-
 
 El código con su funcionamiento explicado es el siguiente:
  
@@ -157,16 +155,16 @@ import time
 
 class Logger:
 
-    def seguimientollamadas(n):
+    def seguimientollamadas(n, mensaje):
         print("Se está generando el fichero de texto...")
         fichero = open("Logger.txt", "a")
         fichero.write("--Start log--")
 
         for i in range(1, int(n)+1):
             if i == 1:
-                fichero.write("\nPrimera llamada.")
+                fichero.write("\nPrimer mensaje: "+ str(mensaje))
             else:
-                fichero.write("\n" + str(i) + " llamada.")
+                fichero.write("\n" + str(i) + " mensaje: " + str(mensaje))
         fichero.write("\n--End log: " + str(n) + " log(s)--")
         fichero.close()
         time.sleep(4)
@@ -176,6 +174,7 @@ class Logger:
             "¿Desea limpiar el registro? (Pulse 1 en caso afirmativo, en caso contrario pulse cualquier otro valor): "))
         if variable == 1:
             os.remove("Logger.txt")
+            exit()
         else:
             print("En este caso, si desea volver a ejecutar el programa tendrá que eliminar manualmente el fichero de texto.")
             exit()
