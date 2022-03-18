@@ -112,7 +112,7 @@ El UML es el siguiente:
 En este ejercicio...
 
 
-El código empleado para resolverlo es el siguiente:
+El código con su funcionamiento explicado es el siguiente:
  
  ```python
  class A: 
