@@ -9,7 +9,7 @@ class Palindromos:
     def __init__(self, atributo):
         self.atributo = atributo
 
-    def test(self, contenido):
+    def test(self, contenido): #comprueba si es palindromo
         a, b = 'áéíóúüñÁÉÍÓÚÜ', 'aeiouunAEIOUU'
         self.tilde = str.maketrans(a, b)
         contenido = contenido.lower()  # Convierto el texto en minúsculas.
@@ -24,7 +24,7 @@ class Palindromos:
         else:
             return False
 
-    def destructor(self):
+    def destructor(self): #si el introduido no es palindromo lo printea
         self.doct = open("Palindromos.txt", "r")
         ultima_linea = self.doct.readlines()[-1]
         if Palindromos(self.atributo).test(self.atributo) == False:
@@ -36,10 +36,10 @@ class Palindromos:
         self.ultima_linea = self.doct.readlines()[-1]
         if self.ultima_linea != "#" and Palindromos(self.atributo).test(self.ultima_linea) == True:
             print(str(self.ultima_linea))
-        self.doct.close()
+        self.doct.close() #Hasta aquí comprueba si el dato anterior fue palindromo, y si lo fue, lo printea
         self.m_atributo = Palindromos(self.atributo).atributo.upper()
         self.doct = open("Palindromos.txt", "a")
-        self.doct.write("\n"+str(self.m_atributo))
+        self.doct.write("\n"+str(self.m_atributo)) #introduce en txt el dato(txt para guardar las variables y recuperarlas al destruirlas)
         self.doct.close()
         if Palindromos(self.atributo).test(self.atributo) == True:
             print(True)
