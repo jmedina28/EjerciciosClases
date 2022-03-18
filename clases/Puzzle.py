@@ -17,5 +17,6 @@ print(aa is a()) #El resultado es Falso porque los objetos(las clase) estan "gua
 z = aa.y #Convierte la variable z en la funcion y que devuelve la longuitud de una variable
 print(z(())) #la funcion y recibiendo un valor (tupla) vacio, por lo que devuelve 0
 print(a().y((a,))) #la funcion y de la clase A recibiendo un valor (tupla) de 1 elemento, por lo que devuelve 1
-print(A.y(aa, (a,z)))
-print(aa.y((z,1,'z')))
+print(A.y(aa, (a,z))) #la funcion y llamada desde A, que recoge una tupla de 2 elementos(devuelve 2)
+# El aa es el equivalente al self en al funcion y, (la clase con self). Llamar A directamente daria error(faltan elementos)
+print(aa.y((z,1,'z'))) #la funcion y de la clase A recibiendo un valor (tupla) de 3 elemento, por lo que devuelve 3
