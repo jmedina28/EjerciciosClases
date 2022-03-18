@@ -1,7 +1,6 @@
 from clases.Palindromo import *
 from clases import Palindromos_Instancias
 from clases.Logger import *
-import time
 
 
 def seleccionejercicio(variable):
