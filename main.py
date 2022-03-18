@@ -17,8 +17,7 @@ def seleccionejercicio(variable):
         puzzle()
     elif variable == 4:
         l = Logger
-        print(l.seguimientollamadas(input(
-            "Introduzca la cantidad de llamadas que usted desea incluir en el registro: ")))
+        print(l.seguimientollamadas(input( "Introduzca la cantidad de mensajes que usted desea incluir en el registro: "), input("Introduzca el mensaje que desea registrar: ")))
 
     else:
         print("Introduzca valores correctos por favor.")
