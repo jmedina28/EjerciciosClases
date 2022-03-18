@@ -5,7 +5,7 @@ import os
 import re
 
 
-class Palindromos():
+class Palindromos:
     def __init__(self, atributo):
         self.atributo = atributo
 
