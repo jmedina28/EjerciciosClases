@@ -185,6 +185,6 @@ class Logger:
 El UML es el siguiente:
 
 <br>
-<img height="250" src="UML/Logger.jpg" />
+<img height="100" src="UML/Logger.jpg" />
 <br>
 
