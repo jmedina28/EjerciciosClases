@@ -40,7 +40,7 @@ class Palindromo:
             print(False)
             exit()
 ```
-El UML es el siguiente:
+El UML de este ejercicio es el mismo que el del ejercicio siguiente.
 
 
 
@@ -106,6 +106,10 @@ La respuesta es porque RADAR es un palindromo, mientras que SONAR no, así que p
 
 El UML es el siguiente:
 
+<br>
+<img height="250" src="UML/Palindromos.jpg" />
+<br>
+
 
 ## Ejercicio 3: Puzzle<a name="id3"></a>
 
@@ -138,7 +142,6 @@ def puzzle():
     print(aa.y((z,1,'z'))) #la funcion y de la clase A recibiendo un valor (tupla) de 3 elemento, por lo que devuelve 3
 
 ```
-El UML es el siguiente:
 
 ## Ejercicio 4: Logger<a name="id4"></a>
 
@@ -180,4 +183,8 @@ class Logger:
             exit()
 ```
 El UML es el siguiente:
+
+<br>
+<img height="250" src="UML/Logger.jpg" />
+<br>
 
