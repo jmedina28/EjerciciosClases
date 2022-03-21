@@ -46,7 +46,7 @@ El UML es el siguiente:
 
 ## Ejercicio 2: Palíndromo (Método de instancia)<a name="id2"></a>
 
-En este ejercicio...
+En este ejercicio he reutilizado la función del ejercicio anterior que comprueba si una palabra/frase es un palindromo. Adicionalmente, he creado un fichero que almacena los distintos valores que la variable va tomando para poder registrarlos, además de una función que imprime en pantalla el valor actual que toma la variable de no ser esta un palindromo. En caso contrario, el método iniciar imprime el último registro antes de modificar la variable.
 
 
 El código empleado para resolverlo es el siguiente:
