@@ -40,8 +40,6 @@ class Palindromo:
             print(False)
             exit()
 ```
-El UML de este ejercicio es el mismo que el del ejercicio siguiente.
-
 
 
 ## Ejercicio 2: Palíndromo (Método de instancia)<a name="id2"></a>
